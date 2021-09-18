@@ -1,5 +1,5 @@
 import './App.css';
-import Navbar from './components/productCard/index'
+import Navbar from './components/navbar/index'
 import ProductCard from './components/productCard/index';
 
 function App() {
