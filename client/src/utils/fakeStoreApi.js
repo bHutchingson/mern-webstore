@@ -6,5 +6,10 @@ export default {
     return axios.get('https://fakestoreapi.com/products?limit=10')
     .then(res=>res.json())
     .then(json=>console.log(json))
+  },
+  getAllCategories: function() {
+    return axios.get('https://fakestoreapi.com/products/categories')
+    .then(res=>console.log(res))
+    .then
   }
 }
