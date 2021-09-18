@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import API from '../../utils/fakeStoreApi'
 
 const Navbar = ({ toggle }) => {
+
   useEffect(() => {
     API.getAllCategories();
     
@@ -32,7 +33,7 @@ const Navbar = ({ toggle }) => {
           />
         </svg>
       </div>
-      <div className='pr-8 md:block  hidden'>
+      <div className='pr-8 md:block hidden'>
         <button to='/' className='p-4'>
           Home
         </button>
