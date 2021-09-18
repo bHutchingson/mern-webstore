@@ -3,13 +3,10 @@ const axios = require('axios');
 
 export default {
   getAllProducts: function() {
-    return axios.get('https://fakestoreapi.com/products?limit=10')
-    .then(res=>res.json())
-    .then(json=>console.log(json))
+    return axios.get('https://fakestoreapi.com/products?limit=100')
   },
   getAllCategories: function() {
     return axios.get('https://fakestoreapi.com/products/categories')
-    .then(res=>console.log(res))
-    .then
+    /* .then(res=>console.log(res)) */
   }
 }

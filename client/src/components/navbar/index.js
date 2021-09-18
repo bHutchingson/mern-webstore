@@ -41,7 +41,7 @@ const Navbar = ({ toggle }) => {
           Electronics
         </button>
         <button to='/about' className='p-4'>
-          Jewelery
+          Jewelry
         </button>
         <button to='/contact' className='p-4'>
           Men's Clothing

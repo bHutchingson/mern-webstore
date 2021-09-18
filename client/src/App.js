@@ -1,9 +1,10 @@
 import './App.css';
-import { Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/navbar/index'
 import ProductCard from './components/productCard/index';
 import Drawer from './components/drawer/index'
+import Homepage from './pages/Homepage';
 
 function App() {
   //handles mobile view navbar
@@ -29,11 +30,13 @@ function App() {
   });
 
   return (
-    <>
+    <BrowserRouter>
       <Navbar toggle={toggle}/>
       <Drawer isOpen={isOpen} toggle={toggle}/>
-      <ProductCard/>
-    </>
+      <Switch>
+        <Route exact path='/' component={Homepage}/>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
