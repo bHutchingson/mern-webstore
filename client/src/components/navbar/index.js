@@ -1,6 +1,7 @@
 import { React, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import API from '../../utils/fakeStoreApi'
+import DropdownRender from '../dropdownMenu/index';
 
 const Navbar = ({ toggle }) => {
 
@@ -35,7 +36,7 @@ const Navbar = ({ toggle }) => {
       </div>
       <div className='pr-8 md:block hidden'>
         <button to='/' className='p-4'>
-          Home
+        <DropdownRender/>
         </button>
         <button to='/menu' className='p-4'>
           Electronics

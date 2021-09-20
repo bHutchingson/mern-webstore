@@ -11,6 +11,7 @@ const Drawer = ({ isOpen, toggle }) => {
       }
       onClick={toggle}
     >
+      <dropdownMenu/>
       <button to='/' className='p-4'>
         Home
       </button>
