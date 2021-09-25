@@ -7,6 +7,5 @@ export default {
   },
   getAllCategories: function() {
     return axios.get('https://fakestoreapi.com/products/categories')
-    /* .then(res=>console.log(res)) */
   }
 }

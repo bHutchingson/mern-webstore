@@ -35,6 +35,7 @@ function App() {
       <Drawer isOpen={isOpen} toggle={toggle}/>
       <Switch>
         <Route exact path='/' component={Homepage}/>
+        <Route exact path='/home' component={Homepage}/>
       </Switch>
     </BrowserRouter>
   );

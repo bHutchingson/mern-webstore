@@ -27,7 +27,7 @@ const DropdownMenu = ({ color }) => {
           <div className="relative inline-flex align-middle w-full">
             <button
               className={
-                "text-black font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 " +
+                "text-black font-mono text-md px-6 py-3 rounded  " +
                 bgColor
               }
               type="button"
@@ -37,7 +37,7 @@ const DropdownMenu = ({ color }) => {
                   ? closeDropdownPopover()
                   : openDropdownPopover();
               }}
-            >Shop
+            >Shop 
             </button>
             <div
               ref={popoverDropdownRef}
@@ -49,7 +49,7 @@ const DropdownMenu = ({ color }) => {
               style={{ minWidth: "12rem" }}
             >
               <a
-                href="#pablo"
+                href="/"
                 className={
                   "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent " +
                   (color === "black" ? " text-blueGray-700" : "text-black")
@@ -59,7 +59,7 @@ const DropdownMenu = ({ color }) => {
                 Jewelry
               </a>
               <a
-                href="#pablo"
+                href="/home"
                 className={
                   "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent " +
                   (color === "white" ? " text-blueGray-700" : "text-white")
@@ -69,7 +69,7 @@ const DropdownMenu = ({ color }) => {
                 Electronics
               </a>
               <a
-                href="#pablo"
+                href="/"
                 className={
                   "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent " +
                   (color === "white" ? " text-blueGray-700" : "text-white")
@@ -80,7 +80,7 @@ const DropdownMenu = ({ color }) => {
               </a>
               {/* <div className="h-0 my-2 border border-solid border-t-0 border-blueGray-800 opacity-25" /> */}
               <a
-                href="#pablo"
+                href="/"
                 className={
                   "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent " +
                   (color === "white" ? " text-blueGray-700" : "text-white")

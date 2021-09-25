@@ -38,17 +38,14 @@ const Navbar = ({ toggle }) => {
         <button to='/' className='p-4'>
         <DropdownRender/>
         </button>
-        <button to='/menu' className='p-4'>
-          Electronics
-        </button>
         <button to='/about' className='p-4'>
-          Jewelry
+          Login/Logout
         </button>
         <button to='/contact' className='p-4'>
-          Men's Clothing
+          'Recent Orders'
         </button>
         <button to='/contact' className='p-4'>
-          Women's Clothing
+          "Cart Icon"
         </button>
       </div>
     </nav>
