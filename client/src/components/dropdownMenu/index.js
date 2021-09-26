@@ -1,5 +1,6 @@
 import React from "react";
 import { createPopper } from "@popperjs/core";
+import API from '../../utils/fakeStoreApi'
 
 const DropdownMenu = ({ color }) => {
   // dropdown props
@@ -49,12 +50,12 @@ const DropdownMenu = ({ color }) => {
               style={{ minWidth: "12rem" }}
             >
               <a
-                href="/"
+                href="/jewelry"
                 className={
                   "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent " +
                   (color === "black" ? " text-blueGray-700" : "text-black")
                 }
-                onClick={e => e.preventDefault()}
+                
               >
                 Jewelry
               </a>

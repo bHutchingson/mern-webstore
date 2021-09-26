@@ -15,7 +15,7 @@ const Navbar = ({ toggle }) => {
       className='flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono'
       role='navigation'
     >
-      <button to='/' className='pl-8'>
+      <button href='/' className='pl-8'>
         MERN Webstore
       </button>
       <div className='px-4 cursor-pointer md:hidden' onClick={toggle}>

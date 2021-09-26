@@ -5,6 +5,7 @@ import Navbar from './components/navbar/index'
 import ProductCard from './components/productCard/index';
 import Drawer from './components/drawer/index'
 import Homepage from './pages/Homepage';
+import JewelryPage from './pages/JewelryPage'
 
 function App() {
   //handles mobile view navbar
@@ -18,7 +19,6 @@ function App() {
     const hideMenu = () => {
       if (window.innerWidth > 768 && isOpen) {
         setIsOpen(false);
-        console.log('i resized');
       }
     };
 
@@ -35,7 +35,7 @@ function App() {
       <Drawer isOpen={isOpen} toggle={toggle}/>
       <Switch>
         <Route exact path='/' component={Homepage}/>
-        <Route exact path='/home' component={Homepage}/>
+        <Route exact path='/jewelry' component={JewelryPage}/>
       </Switch>
     </BrowserRouter>
   );

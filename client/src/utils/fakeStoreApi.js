@@ -7,5 +7,11 @@ export default {
   },
   getAllCategories: function() {
     return axios.get('https://fakestoreapi.com/products/categories')
+  },
+  getOneCategory: function(category) {
+    return axios.get(`https://fakestoreapi.com/products/category/${category}`)
+  },
+  getOneProduct: function(product) {
+    return axios.get(`https://fakestoreapi.com/products/${product}`)
   }
 }
